@@ -1,5 +1,5 @@
 
-public class InsertionSort {
+public class InsertionSort implements SortingAlgorithm {
 
 	void sort (int[] a){
 		for (int i = 1; i<a.length; i++) {
