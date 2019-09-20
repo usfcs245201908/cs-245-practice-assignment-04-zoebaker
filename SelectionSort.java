@@ -4,7 +4,7 @@ public class SelectionSort implements SortingAlgorithm {
 	
 	//swap the positions of the values at a[i] and a[j]
 	public void swap (int [] a, int i, int j) {
-		double temp = a[i]; 
+		int temp = a[i]; 
 		a[i] = a[j]; 
 		a[j] = temp; 
 	}
