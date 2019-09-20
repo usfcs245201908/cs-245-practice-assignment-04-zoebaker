@@ -1,15 +1,16 @@
 
-public class SelectionSort {
+
+public class SelectionSort implements SortingAlgorithm {
 	
 	//swap the positions of the values at a[i] and a[j]
-	void swap (double [] a, int i, int j) {
+	public void swap (int [] a, int i, int j) {
 		double temp = a[i]; 
 		a[i] = a[j]; 
 		a[j] = temp; 
 	}
 	
 	// returns index of minimum val in array a
-	int findMin(double [] a, int start) {
+	public int findMin(int [] a, int start) {
 	
 		int min=start; 
 		
@@ -17,12 +18,12 @@ public class SelectionSort {
 		for (int i= start+1; i<a.length; i++) {
 			if (a[i] < a[min])
 				min =i; 
-			return min; 
+			 
 			
-		}
+		}return min;
 	}
 	
-	void selectionSort (double [] a) {
+	public void sort (int [] a) {
 		for (int i = 0; i < a.length; i++) {
 			
 			//find min in the array from last checked, i,  to end of array, and swap 
@@ -31,7 +32,7 @@ public class SelectionSort {
 		}
 	}
 	
-	String sortName() {
+	public String sortName() {
 		return "selection"; 
 	}
 }
